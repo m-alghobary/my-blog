@@ -53,7 +53,7 @@ public static function getFacadeRoot()
 }
 ```
 
-This method simply resolves an **object** (remember this object) from the app service container using the key defined in the getFacadeAccessor method as we saw previously on the definition of the Hash class, and if you are qustioning who registered this **object**; the answer is Laravel..
+This method simply resolves an **object** (remember this object) from the app service container using the key defined in the getFacadeAccessor method as we saw previously on the definition of the Hash class, and if you are questioning who registered this **object**; the answer is Laravel.
 
 When the application starts, during the booting step Laravel auto registers all Facades on the app service container.
 
@@ -83,9 +83,9 @@ public function make($value, array $options = [])
 
 As we can see it doesn't do too much, it calls the `$this->driver()` method, then calls make on the returned object, so let's take a look into the `$this->driver()` method.
 
-> now you know why the are called drivers on the config files
+> Now you know why they are called drivers on the config files
 
-The code for `` looks like this (I added the comments to clarify the code):
+The code for `$this->driver()` looks like this (I added the comments to clarify the code):
 
 ```PHP
 public function driver($driver = null)
